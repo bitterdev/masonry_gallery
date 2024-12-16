@@ -1,0 +1,59 @@
+html {
+  body {
+    .ccm-page {
+      .masonry-grid {
+        margin-bottom: 15px;
+        width: calc(100% + 33px);
+
+        @media screen and (max-width: 767px) {
+          width: 100%;
+        }
+
+        .grid-sizer, .grid-item {
+          width: calc(50% - 30px);
+
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+        }
+
+        &::after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+
+        .grid-item {
+          position: relative;
+          float: left;
+          vertical-align: top;
+          min-height: 1px;
+          display: block;
+          cursor: pointer;
+
+          .grid-inner {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+
+            &:hover {
+              img {
+                transform: scale(1.03)
+              }
+            }
+
+            img {
+              object-fit: cover;
+              height: 100%;
+              width: 100%;
+              display: block;
+              transform: scale(1.005) translateZ(0);
+              transition: transform .35s cubic-bezier(.25, .46, .45, .94);
+              will-change: transform;
+            }
+          }
+        }
+      }
+    }
+  }
+}

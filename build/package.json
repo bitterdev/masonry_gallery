@@ -1,0 +1,19 @@
+{
+  "name": "masonry_grid",
+  "version": "1.0.0",
+  "author": "Fabian Bitter",
+  "license": "MIT",
+  "devDependencies": {
+    "laravel-mix": "^6.0.41",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.59.3",
+    "sass-loader": "^12.6.0"
+  },
+  "scripts": {
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production"
+  }
+}
