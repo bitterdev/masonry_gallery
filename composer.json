@@ -1,0 +1,5 @@
+{
+  "name": "bitter/masonry_gallery",
+  "type": "concrete5-package",
+  "description": "A masonry gallery template for Concrete CMS."
+}
