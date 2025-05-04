@@ -9,7 +9,7 @@ use Concrete\Core\Package\Package;
 class Controller extends Package
 {
     protected string $pkgHandle = 'masonry_gallery';
-    protected string $pkgVersion = '0.0.3';
+    protected string $pkgVersion = '0.0.4';
     protected $appVersionRequired = '9.0.0';
 
     public function getPackageDescription(): string

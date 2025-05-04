@@ -32,6 +32,7 @@ module.exports = function (grunt) {
         copy: {
             main: {
                 files: [
+                    {src: ['elements/**'], dest: "dist/"},
                     {src: ['blocks/**'], dest: "dist/"},
                     {src: ['js/**'], dest: "dist/"},
                     {src: ['controller.php'], dest: "dist/", filter: 'isFile'},
